@@ -1,0 +1,27 @@
+package DSA;
+
+public class previos {
+
+	public static void main(String[] args) {
+		
+		String str="i want to to go go to to home";
+		String[] words=str.split(" ");
+		StringBuilder sb=new StringBuilder();
+		
+		String prev=" ";
+		
+		for(String word:words)
+		{
+			if(!word.equals(prev))
+			{
+				sb.append(word).append(" ");
+				prev=word;
+			}
+		}
+		
+		System.out.println(" "+sb.toString().trim());
+		
+
+	}
+
+}
